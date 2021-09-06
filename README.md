@@ -27,7 +27,7 @@ Se creó utilizando tecnologías como es el caso de React Native que nos permite
 
 *******************
 
-#LADO SECRETO
+# LADO SECRETO
 
 Adicionalmente se está estableciendo un lado secreto donde el usuario podrá agregar notas privadas donde solo él puede ingresar con una clave.
 
