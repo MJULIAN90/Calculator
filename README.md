@@ -1,4 +1,8 @@
-# Calculator Secrets
+ <p align='center'>
+  <img alt='LogoPic' src='https://reactnative.dev/img/header_logo.svg'   width='200px' height='200px' />
+</p>
+
+# Calculadora Secreta
 
 Se Creo una calculadora en la cual podemos hacer operaciones cotidianas 
 
