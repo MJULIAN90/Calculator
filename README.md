@@ -16,6 +16,12 @@ Se Creo una calculadora en la cual podemos hacer operaciones cotidianas
 | :------------: | :------------: | :------------: | :------------: | 
 | REACT NATIVE CLI | TYPE SCRIPT | CSS  |  JAVASCRIPT  | 
 
+#LADO SECRETO
+
+Adicionalmente se esta estableciendo un lado secreto donde el usuario podra agregar notas privadas donde solo el podra ingresar con una clave.
+
+In progress.
+
 
 
 
