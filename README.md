@@ -2,7 +2,7 @@
   <img alt='LogoPic' src='https://reactnative.dev/img/header_logo.svg'   width='200px' height='200px' />
 </p>
 
-# Calculadora Secreta
+# Calculadora 
 
 Se Creó una calculadora en la cual podemos hacer operaciones normales como es la suma, resta, multiplicación y división.
 
