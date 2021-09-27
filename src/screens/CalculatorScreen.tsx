@@ -17,11 +17,17 @@ const CalculatorScreen = ({}) => {
     numero,
     numeroAnterior,
     clear,
+    operador,
   } = UseCalculadora();
   return (
     <View style={styles.container}>
       {numeroAnterior !== '0' && (
         <Text style={styles.resultadoPeque}> {numeroAnterior}</Text>
+      )}
+      {operador !== undefined ? (
+        <Text style={styles.resultadoPeque}> {operador}</Text>
+      ) : (
+        <Text style={styles.resultadoPeque}> {null}</Text>
       )}
       <Text
         style={styles.resultado}

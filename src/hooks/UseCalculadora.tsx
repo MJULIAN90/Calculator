@@ -10,12 +10,14 @@ enum Operadores {
 const UseCalculadora = () => {
   const [numero, setNumero] = useState('0');
   const [numeroAnterior, setNumeroAnterior] = useState('0');
+  const [operador, setOperador] = useState(undefined);
 
   const operacion = useRef<Operadores>();
 
   const clear = () => {
     setNumero('0');
     setNumeroAnterior('0');
+    setOperador(undefined);
   };
 
   const armarNumero = (numeroTexto: string) => {
@@ -64,29 +66,61 @@ const UseCalculadora = () => {
 
   const cambiarNumPorAnterior = () => {
     if (numero.endsWith('.')) setNumeroAnterior(numero.slice(0, -1));
-    else setNumeroAnterior(numero);
+    else if (operador === undefined && numeroAnterior === '0') {
+      setNumeroAnterior(numero);
+    }
 
-    setNumero('0');
+    if (operador === undefined) {
+      setNumero('0');
+    }
   };
 
   const btnDividir = () => {
-    cambiarNumPorAnterior();
-    operacion.current = Operadores.dividir;
+    if (numero !== 'ERROR') {
+      if (numeroAnterior !== '0') {
+        calcular();
+      }
+      cambiarNumPorAnterior();
+      operacion.current = Operadores.dividir;
+      setOperador('/');
+    }
+    setNumero('0');
   };
 
   const btnMultiplicar = () => {
-    cambiarNumPorAnterior();
-    operacion.current = Operadores.multiplicar;
+    if (numero !== 'ERROR') {
+      if (numeroAnterior !== '0') {
+        calcular();
+      }
+      cambiarNumPorAnterior();
+      operacion.current = Operadores.multiplicar;
+      setOperador('x');
+    }
+    setNumero('0');
   };
 
   const btnSumar = () => {
-    cambiarNumPorAnterior();
-    operacion.current = Operadores.sumar;
+    if (numero !== 'ERROR') {
+      if (numeroAnterior !== '0') {
+        calcular();
+      }
+      cambiarNumPorAnterior();
+      operacion.current = Operadores.sumar;
+      setOperador('+');
+    }
+    setNumero('0');
   };
 
   const btnRestar = () => {
-    cambiarNumPorAnterior();
-    operacion.current = Operadores.restar;
+    if (numero !== 'ERROR') {
+      if (numeroAnterior !== '0') {
+        calcular();
+      }
+      cambiarNumPorAnterior();
+      operacion.current = Operadores.restar;
+      setOperador('-');
+    }
+    setNumero('0');
   };
 
   const calcular = () => {
@@ -95,19 +129,24 @@ const UseCalculadora = () => {
 
     switch (operacion.current) {
       case Operadores.sumar:
-        setNumero(`${num1 + num2}`);
+        setNumeroAnterior(`${num1 + num2}`);
         break;
       case Operadores.restar:
-        setNumero(`${num2 - num1}`);
+        setNumeroAnterior(`${num2 - num1}`);
         break;
       case Operadores.multiplicar:
-        setNumero(`${num1 * num2}`);
+        setNumeroAnterior(`${num1 * num2}`);
         break;
       case Operadores.dividir:
+        if (numero === '0') {
+          setNumeroAnterior('ERROR');
+          break;
+        }
         setNumero(`${num2 / num1}`);
         break;
     }
-    setNumeroAnterior('0');
+    setNumero('0');
+    setOperador(undefined);
   };
 
   return {
@@ -124,6 +163,7 @@ const UseCalculadora = () => {
     numeroAnterior,
     setNumeroAnterior,
     clear,
+    operador,
   };
 };
 
