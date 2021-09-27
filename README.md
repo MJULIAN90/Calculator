@@ -4,7 +4,7 @@
 
 # Calculadora 
 
-Se Creó una calculadora en la cual podemos hacer operaciones normales como es la suma, resta, multiplicación y división.
+Se Creó una calculadora en la cual podemos hacer operaciones normales como es la suma, resta, multiplicación y división , se dio un estilo igual al de un movil Apple. 
 
 <p align="center">
 <img  src="https://user-images.githubusercontent.com/76981775/132179292-d3189efa-ba7b-408d-89b6-aace93657f89.png" width="30%" height='500px'>
