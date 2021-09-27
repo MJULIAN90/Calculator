@@ -19,8 +19,7 @@ Se Creó una calculadora en la cual podemos hacer operaciones normales como es l
 
 Se creó utilizando tecnologías como es el caso de React Native que nos permite desarrollar APP's tanto para ANDROID como para iOS, se utilizó TypeScript para tipar los datos a utilizar en nuestro código para asegurarnos que se escriba el código fuente correctamente y se dio un poco de estilos con CSS.
 
-| <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="60" alt="React Native"> | <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--6McQQU7i--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/j4hwcf7lntmqyha7ras5.png" width="70" alt="TYPE SCRIPT"> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="60" alt="CSS"> |
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="60" alt="JS"> |
+| <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="60" alt="React Native"> | <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--6McQQU7i--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/j4hwcf7lntmqyha7ras5.png" width="70" alt="TYPE SCRIPT"> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="60" alt="CSS"> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="60" alt="JS"> |
 | :------------: | :------------: | :------------: | :------------: |
 | REACT NATIVE CLI | TYPE SCRIPT | CSS  |  JAVASCRIPT  | 
 
