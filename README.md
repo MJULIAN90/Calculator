@@ -26,11 +26,10 @@ Se creó utilizando tecnologías como es el caso de React Native que nos permite
 
 *******************
 
-# LADO SECRETO
+✔ web site: <a href="https://github.com/MJULIAN90/React-Native-wallet-usd-btc/blob/main/README.md" target="_blank">
+MAS INFORMACION
+</a> 
 
-Adicionalmente se está estableciendo un lado secreto donde el usuario podrá agregar notas privadas donde solo él puede ingresar con una clave.
-
-En construcción.
 
 
 
