@@ -26,8 +26,8 @@ Se creó utilizando tecnologías como es el caso de React Native que nos permite
 
 *******************
 
-✔ web site: <a href="https://github.com/MJULIAN90/React-Native-wallet-usd-btc/blob/main/README.md" target="_blank">
-MAS INFORMACION
+✔ web site: <a href="https://github.com/MJULIAN90" target="_blank">
+PROXIMAMENTE
 </a> 
 
 
